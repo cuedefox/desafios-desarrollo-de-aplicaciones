@@ -7,11 +7,11 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: '#EAE7AF',
-    height: 30
+    height: 45
   },
   itemTitle: {
     fontWeight: 'bold',
-    fontSize: 20,
+    fontSize: 22,
     color: '#A72693'
   },
   deleteItem: {
@@ -21,8 +21,21 @@ export const styles = StyleSheet.create({
     marginRight: 10
   },
   checkboxNo: {
-    height: 10,
-    width: 10,
+    height: 25,
+    width: 25,
+    marginLeft: 10,
+    borderRadius: 50,
+    borderColor: 'black',
+    borderWidth: 1,
     backgroundColor: 'grey'
+  },
+  checkboxYes: {
+    height: 25,
+    width: 25,
+    marginLeft: 10,
+    borderRadius: 50,
+    borderColor: 'black',
+    borderWidth: 1,
+    backgroundColor: 'green'
   }
 });

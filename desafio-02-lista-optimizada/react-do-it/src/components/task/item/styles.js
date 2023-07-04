@@ -14,8 +14,16 @@ export const styles = StyleSheet.create({
     fontSize: 22,
     color: '#A72693'
   },
+  itemTitleLine: {
+    fontWeight: 'bold',
+    fontSize: 22,
+    color: '#A72693',
+    textDecorationLine: 'line-through'
+  },
   deleteItem: {
-    color: 'red',
+    color: 'white',
+    backgroundColor: 'red',
+    paddingHorizontal: 6,
     fontSize: 25,
     fontWeight: 'bold',
     marginRight: 10

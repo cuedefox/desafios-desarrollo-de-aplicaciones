@@ -1,10 +1,10 @@
-import { FlatList, Text, View } from 'react-native';
+import { FlatList, View, Text } from 'react-native';
 
 import { styles } from './styles';
 
 const ItemContainer = ({ tasks, renderItem }) => {
   return (
-    <View style={styles.itemContainer}>
+    <View style={styles.itemsContainer}>
       {tasks.length === 0 ? (
         <Text style={styles.noTaskText}>¡No hay Tareas!</Text>
       ) : (

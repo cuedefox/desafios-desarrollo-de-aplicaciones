@@ -1,9 +1,11 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  itemContainer: {
+  itemsContainer: {
     backgroundColor: '#241663',
-    minHeight: 550
+    minHeight: 550,
+    flexGrow: 1,
+    marginBottom: 200
   },
   noTaskText: {
     color: '#EAE7AF',
@@ -13,7 +15,7 @@ export const styles = StyleSheet.create({
     marginTop: 100
   },
   flatList: {
-    marginTop: 15
+    marginVertical: 15
   },
   list: {
     gap: 15

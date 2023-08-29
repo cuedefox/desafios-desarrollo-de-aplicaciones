@@ -11,7 +11,7 @@ import { styles } from './styles';
 import { setProfileImage } from '../../store/profile/profile.slice';
 import { COLORS } from '../../themes';
 
-const ImageSelector = ({ profileImage }) => {
+const ImageSelector = ({ profileImage, onSelect }) => {
   const [image, setImage] = useState(null);
   const dispatch = useDispatch();
   const verifyPermissions = async () => {
@@ -38,7 +38,7 @@ const ImageSelector = ({ profileImage }) => {
       base64: true
     });
 
-    dispatch(setProfileImage(result.assets[0].uri));
+    await onSelect({ uri: result.assets[0].uri, base64: result.assets[0].base64 });
     setImage(result.assets[0].uri);
   };
   return (

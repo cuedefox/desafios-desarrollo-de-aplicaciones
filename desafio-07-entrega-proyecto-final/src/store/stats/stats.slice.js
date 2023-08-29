@@ -18,10 +18,19 @@ const statsSlice = createSlice({
     },
     deletedTask: (state, action) => {
       state.tasksEliminated += 1;
+    },
+    getStats: (state, action) => {
+      const { tasksCreated, tasksCompleted, tasksEliminated } = action.payload;
+      return {
+        ...state,
+        tasksCreated,
+        tasksCompleted,
+        tasksEliminated,
+      };
     }
   }
 });
 
-export const { createdTask, checkedTask, deletedTask } = statsSlice.actions;
+export const { createdTask, checkedTask, deletedTask, getStats } = statsSlice.actions;
 
 export default statsSlice.reducer;
